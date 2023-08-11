@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>REST API MVP</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Inicio Proyecto REST API MVP</h1>
+    </header>
+    <main>
+        <div class="nav-list">
+            <h2>Subir Archivos</h2>
+            <ul>
+                <li><a href="{{ url_for('upload_csv') }}">Subir Archivo</a></li>
+            </ul>
+            <h2>Métricas</h2>
+            <ul>
+                <li><a href="{{ url_for('consulta1') }}">Métrica 1</a></li>
+                <li><a href="{{ url_for('consulta2') }}">Métrica 2</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

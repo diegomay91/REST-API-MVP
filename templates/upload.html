@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload CSV</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/upload.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Subir Archivos CSV</h1>
+    </header>
+    <main>
+        <form method="POST" enctype="multipart/form-data" class="upload-form">
+            <label for="database">Selecciona una base de datos:</label>
+            <select name="database" id="database">
+                <option value="database1">Contratados_DB</option>
+                <option value="database2">Departamentos_DB</option>
+                <option value="database3">Perfiles_DB</option>
+            </select>
+            <br>
+            <label for="file">Selecciona un archivo CSV:</label>
+            <input type="file" name="file" accept=".csv" required>
+            <button type="submit">Subir</button>
+        </form>
+    </main>
+</body>
+</html>
